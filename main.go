@@ -13,6 +13,5 @@ func main() {
 		return c.String(http.StatusOK, "Hello")
 	})
 
-    // 1323 ポートでリッスンを開始。 start がエラーを起こしたら Fatal を起こしてログに記録する
-	e.Logger.Fatal(e.Start(":1323"))
+	e.Logger.Fatal(e.Start(":8080"))
 }
